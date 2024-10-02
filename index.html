@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button id="prevMonth">Previous</button>
+            <div id="currentMonth"></div>
+            <button id="nextMonth">Next</button>
+        </div>
+        <div class="days" id="days"></div>
+        <div class="todo" id="todo">
+            <h3 id="selectedDate"></h3>
+            <textarea id="todoInput" placeholder="Enter your todo"></textarea>
+            <button id="saveTodo">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

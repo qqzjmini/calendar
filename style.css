@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7e0; /* 淡绿色背景 */
+    background-image: url('/Users/luyi/Downloads/小项目/calendar/calendar-component/空洞.jpg'); /* 插入背景图片 */
+    background-size: cover; /* 调整图片大小以覆盖整个背景 */
+    background-position: center; /* 将图片居中 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    opacity: 0.9; /* 调节透明度 */
+}
+
+.calendar {
+    width: 450px; /* 放大1.5倍 */
+    background-color: #b7ea48; /* 淡紫色背景 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(217, 201, 201, 0.1);
+    text-align: center;
+    padding: 30px; /* 放大1.5倍 */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* 放大1.5倍 */
+}
+
+.header button {
+    background-color: #ffa500; /* 橙色按钮 */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header button:hover {
+    background-color: #ff8c00; /* 按钮悬停时的颜色 */
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7.5px; /* 放大1.5倍 */
+}
+
+.day, .empty-day {
+    width: 60px; /* 放大1.5倍 */
+    height: 60px; /* 放大1.5倍 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.day.today {
+    background-color: #ffeb3b;
+}
+
+.day.selected {
+    background-color: #2196f3;
+    color: white;
+}
+
+.todo {
+    margin-top: 30px; /* 放大1.5倍 */
+}
+
+.todo textarea {
+    width: 100%;
+    height: 150px; /* 放大1.5倍 */
+    margin-bottom: 15px; /* 放大1.5倍 */
+}
